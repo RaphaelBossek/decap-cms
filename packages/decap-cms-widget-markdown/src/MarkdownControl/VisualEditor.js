@@ -221,7 +221,7 @@ function Editor(props) {
         position: relative;
       `}
     >
-      <Slate editor={editor} value={editorValue} onChange={handleChange}>
+      <Slate editor={editor} value={editorValue} initialValue={editorValue} onChange={handleChange}>
         <EditorControlBar>
           {
             <Toolbar
